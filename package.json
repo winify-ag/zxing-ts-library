@@ -56,7 +56,7 @@
     "scripts": {
         "lint": "yarn tslint src/**/*.ts",
         "clean": "yarn shx rm -rf umd esm5",
-        "test": "yarn mocha-webpack \"./src/**/*.spec.ts\" --timeout 200000 --webpack-config webpack.config.test.js",
+        "test": "yarn mocha-webpack \"./test/**/*.spec.ts\" --timeout 200000 --webpack-config webpack.config.test.js",
         "cover": "yarn nyc --reporter=lcov --reporter=text yarn test",
         "build": "yarn clean && yarn tsc && yarn webpack --mode production",
         "shx": "./node_modules/.bin/shx",

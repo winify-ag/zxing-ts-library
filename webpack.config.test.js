@@ -1,7 +1,7 @@
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 
-const ProvidePlugin = require('webpack').ProvidePlugin;
+const { ProvidePlugin } = require('webpack');
 
 module.exports = (env, argv) => {
     const isDebug = env == 'dbg';
@@ -17,7 +17,7 @@ module.exports = (env, argv) => {
             rules: [{
                 test: /\.ts$/,
                 exclude: /node_modules/,
-                include: path.resolve('src'), // instrument only testing sources with Istanbul, after ts-loader runs
+                include: [path.resolve('src'), path.resolve('test')], // instrument only testing sources with Istanbul, after ts-loader runs
                 use: ifDebug('ts-loader', ['istanbul-instrumenter-loader', 'ts-loader'])
             }],
         },

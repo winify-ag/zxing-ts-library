@@ -3,7 +3,6 @@
         "module": "commonjs",
         "target": "es5",
         "moduleResolution": "node",
-        "baseUrl": "./",
         "lib": [
             "es5",
             "es6",
@@ -14,12 +13,14 @@
         "alwaysStrict": true,
         "noImplicitAny": false,
         "sourceMap": true,
-        "declaration": true
+        "declaration": true,
+        "baseUrl": "test",
+        "paths": {
+            "@zxing/library/*": ["../src/*"]
+        }
     },
     "include": [
+        "test/**/*.ts",
         "src/**/*.ts"
-    ],
-    "exclude": [
-        "test"
     ]
 }

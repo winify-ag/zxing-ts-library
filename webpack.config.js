@@ -125,7 +125,7 @@ const config = (env, argv) => {
             rules: [{
                 test: /\.ts?$/,
                 include: /src/,
-                exclude: /src\/test/,
+                exclude: /test/,
                 loader: 'awesome-typescript-loader',
             }],
         },

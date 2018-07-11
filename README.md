@@ -80,9 +80,9 @@ import { BrowserQRCodeReader, VideoInputDevice } from '@zxing/library';
 
 #### Node
 
-To use in node you will need to provide an implementation of [`LuminanceSource`](https://github.com/zxing-js/library/blob/master/src/core/LuminanceSource.ts) for an image. A starting point is [`SharpImageLuminanceSource`](https://github.com/zxing-js/library/blob/master/src/test/core/SharpImageLuminanceSource.ts) from tests that is using [sharp image processing](https://github.com/lovell/sharp) Node library.
+To use in node you will need to provide an implementation of [`LuminanceSource`](https://github.com/zxing-js/library/blob/master/src/core/LuminanceSource.ts) for an image. A starting point is [`SharpImageLuminanceSource`](https://github.com/zxing-js/library/blob/master/test/core/SharpImageLuminanceSource.ts) from tests that is using [sharp image processing](https://github.com/lovell/sharp) Node library.
 
-No examples are availabe for now, however you can have a look at the extensive [tests cases](https://github.com/zxing-js/library/tree/master/src/test/core/qrcode).
+No examples are availabe for now, however you can have a look at the extensive [tests cases](https://github.com/zxing-js/library/tree/master/test/core/qrcode).
 
 ### Scanning from Video Camera
 
