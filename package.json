@@ -78,7 +78,7 @@
     "devDependencies": {
         "@types/chai": "^4.1.2",
         "@types/mocha": "^5.2.5",
-        "@types/node": "^10.12.2",
+        "@types/node": "10.12.8",
         "@types/seedrandom": "^2.4.27",
         "@types/sharp": "^0.21.0",
         "@types/text-encoding": "0.0.34",
