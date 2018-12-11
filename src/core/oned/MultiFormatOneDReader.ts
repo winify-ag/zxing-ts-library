@@ -17,10 +17,10 @@
 /*namespace com.google.zxing.oned {*/
 
 import BarcodeFormat from '../BarcodeFormat';
-import BitArray from './../common/BitArray';
+import BitArray from '../common/BitArray';
 import Code39Reader from './Code39Reader';
 import Code128Reader from './Code128Reader';
-import DecodeHintType from './../DecodeHintType';
+import DecodeHintType from '../DecodeHintType';
 import ITFReader from './ITFReader';
 import MultiFormatUPCEANReader from './MultiFormatUPCEANReader';
 import NotFoundException from '../NotFoundException';

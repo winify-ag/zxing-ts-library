@@ -4,8 +4,15 @@ const path = require('path');
 const { ProvidePlugin } = require('webpack');
 
 module.exports = (env, argv) => {
+
     const isDebug = env == 'dbg';
-    const ifDebug = (whenDebug, whenNot) => (isDebug ? whenDebug : whenNot);
+    const loaders = [];
+
+    if (!isDebug) {
+        loaders.push('istanbul-instrumenter-loader');
+    }
+
+    loaders.push('ts-loader');
 
     return {
         mode: 'development',

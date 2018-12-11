@@ -1,5 +1,5 @@
 import UnsupportedOperationException from '../UnsupportedOperationException';
-import CharacterSetECI from './../common/CharacterSetECI';
+import CharacterSetECI from '../common/CharacterSetECI';
 
 /**
  * Responsible for en/decoding strings.
